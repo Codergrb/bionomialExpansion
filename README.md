@@ -1,10 +1,10 @@
-# Binomial Expansion Calculator
+# Binomial Expansion -> String Return Function
 
-## Usage
 
-### `bionomialExapnsion(a, x, n)`
-
-Calculates the binomial expansion formula of (a + x)^n and returns it as a string.
+# Function 
+```javascript
+bionomialExapnsion(a, x, n)
+```
 
 #### Parameters
 - `a`: Character representing the base term.
@@ -12,14 +12,41 @@ Calculates the binomial expansion formula of (a + x)^n and returns it as a strin
 - `n`: Integer representing the exponent.
 
 #### Returns
-A string containing the binomial expansion formula.
-
-## Example
+A string containing the binomial expansion formula. <br>
+For the input values a = 'a', x = 'x', and n = 2
+the function returns the string:
+```html
+ a<sup>2</sup> + 2ab + b<sup>2</sup>
+````
+## Import in your code
+:pushpin: paste it in your html file
+```html
+<script src="https://cdn.jsdelivr.net/gh/Codergrb/bionomialExpansion/script.js"></script>
+```
+#### Example
 
 ```javascript
-// Import the script in your HTML file
-// <script src="https://cdn.jsdelivr.net/gh/Codergrb/bionomialExpansion/script.js"></script>
+//Copy And paste In your Code
 
-// Usage example
-const expansionFormula = bionomialExapnsion('a', 'x', 3);
+let expansionFormula = bionomialExapnsion('a', 'b', 2);
+document.write(expansionFormula);
+
+//console Output
 console.log(expansionFormula);
+```
+###### Output: 
+```html 
+a² + 2ab + b²
+```
+###### Console Output:
+```
+ a<sup>2</sup> + 2a<sup></sup>b<sup></sup> + b<sup>2</sup>
+```
+> [!Note]
+ >This function does not calculate the numerical value of the expansion but provides the expanded formula.
+## Author
+ Script written by [@Codergrb.](https://github.com/Codergrb)
+
+## License
+ This script is released under the MIT License. <br>
+ Feel free to use and modify this script for your binomial expansion calculations!
